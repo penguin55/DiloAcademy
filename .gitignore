@@ -1,9 +1,9 @@
-[Ll]ibrary/
-[Tt]emp/
-[Oo]bj/
-[Bb]uild/
-[Bb]uilds/
-Assets/AssetStoreTools*
+AdvancedPong/[Ll]ibrary/
+AdvancedPong/[Tt]emp/
+AdvancedPong/[Oo]bj/
+AdvancedPong/[Bb]uild/
+AdvancedPong/[Bb]uilds/
+AdvancedPong/Assets/AssetStoreTools*
 
 # Visual Studio cache directory
 .vs/
@@ -35,3 +35,5 @@ sysinfo.txt
 # Builds
 *.apk
 *.unitypackage
+*.log
+AdvancedPong/.vsconfig
