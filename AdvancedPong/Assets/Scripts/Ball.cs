@@ -6,7 +6,7 @@ public class Ball : MonoBehaviour
 {
     private Rigidbody2D physic;
 
-    public Vector2 initialForce;
+    public float force;
 
     private Vector2 trajectoryOrigin;
 
@@ -26,18 +26,10 @@ public class Ball : MonoBehaviour
 
     void PushBall()
     {
-        float randomVeloY = Random.Range(-initialForce.y, initialForce.y);
+        float angle = Random.Range(-45f, 45f);
+        Vector2 dir = new Vector2(Mathf.Cos(angle), Mathf.Sin(angle));
 
-        float randomDir = Random.Range(0, 2);
-
-        if (randomDir < 1.0f)
-        {
-            physic.AddForce(new Vector2(-initialForce.x, randomVeloY));
-        }
-        else
-        {
-            physic.AddForce(new Vector2(initialForce.x, randomVeloY));
-        }
+        physic.AddForce(dir * force);
     }
 
     void RestartGame()
