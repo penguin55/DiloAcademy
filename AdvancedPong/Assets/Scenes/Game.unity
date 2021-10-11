@@ -1090,7 +1090,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c09c78b4bf3e55840a7c99fbc1231b8a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  initialForce: {x: 550, y: 550}
+  force: 500
 --- !u!1 &1538728163
 GameObject:
   m_ObjectHideFlags: 0
